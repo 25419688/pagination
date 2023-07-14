@@ -23,7 +23,9 @@ body {
   font-family: "Montserrat", sans-serif;
 
 }
-
+/*--------------------------------------------------------------
+# Accueil
+--------------------------------------------------------------*/
 .button {
   background-color: blue;
   color: white;
@@ -257,7 +259,9 @@ body {
   background-color: #007bb6
 }
 
-
+/*--------------------------------------------------------------
+# Plagiat
+--------------------------------------------------------------*/
 .rectangle {
   width: 800px;
   margin-bottom: 200px;
@@ -299,7 +303,9 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgb(244, 244, 245);
 }
-
+/*--------------------------------------------------------------
+# Work
+--------------------------------------------------------------*/
 .work {
   width: 200px;
   height: 100px;
@@ -466,4 +472,168 @@ h1 {
   margin-top: 100px;
   transform: translate(-50%, -50%);
 
+}
+/*--------------------------------------------------------------
+# Singn In
+--------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+
+.container-1 {
+  margin: 50px 0 30px;
+  position: relative;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 14px !important;
+  margin: 14px 0 0!important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.error.show {
+  display: block;
+}
+
+.formPage {
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin: 0 auto;
+  max-width: 320px;
+  max-height: 700px;
+  position: relative;
+}
+
+.formCtlBlock {
+  font-size: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.formCtlBlock a {
+  display: inline-block;
+  color: #172fa7;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  transition: all 300ms;
+}
+
+.formCtlBlock a:hover,
+.formCtlBlock a.active {
+  transform: translateY(2px);
+}
+
+.formCtlBlock a span,
+.formCtlBlock a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.formCtlBlock a i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.formCtlBlock a span {
+  padding: 10px 0;
+}
+
+.formBlock {
+  background-color: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 20px;
+  display: none;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.formBlock.active {
+  display: block;
+}
+
+.formBlock .form-group {
+  animation: left-bounce 600ms both;
+  backface-visibility: none;
+  position: relative;
+}
+
+.formBlock .form-group.alignRight {
+  animation: fadeOut 300ms both;
+}
+
+.formBlock.active .form-group:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.formBlock.active .form-group:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.formBlock.active .form-group:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.formBlock.active .form-group:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.formBlock.active .form-group.alignRight {
+  animation-delay: 800ms;
+}
+
+.formBlock p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+input {
+  background: linear-gradient(to bottom, #f4f5f7 96%, #f4f5f7 4%);
+  background-position: -280px 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  border-bottom: solid 1px #c0c6db;
+  color: #0d0d0e;
+  display: block;
+  margin: 15px 0;
+  padding: 10px 0;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  width: 100%;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  font-size: 14px;
+  transform: translateY(-20px);
+  visibility: visible;
+}
+
+.create {
+  box-shadow: none;
+  border: 0;
+  color: #c0c6db;
+  background: linear-gradient(#013544, #014C63, #026685, #0289B2);
+  color: #f9f7f7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
