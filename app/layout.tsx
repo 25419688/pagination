@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import SignIn from './components/SignIn'
 import Accueil from './components/Accueil'
 import PlagiatD from './components/PlagiatD'
-import Work from './components/Work'
+//import Work from './components/Work'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,11 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Accueil/>
-        <SignIn/>
-        <PlagiatD/>
-        <Work/>
+      <body className={inter.className}>{children}
+       
       </body>
     </html>
   )

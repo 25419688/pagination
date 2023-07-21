@@ -1,6 +1,6 @@
 import Image from 'next/image'
-export default function Accueil(){
-    return(
+export default function Accueil() {
+    return (
         <><div className="text-work"><h1>How it Works ?</h1>
             <p> Resolving neglected sir tolerably but existence conveying for.</p>
             <p>Day his put off unaffected literature partiality inhabiting.</p>
@@ -22,6 +22,6 @@ export default function Accueil(){
                 </div>
             </div><div className="work bottom">
                 <div className="inner-rectangle"></div>
-            </div></> 
+            </div></>
     )
 }
